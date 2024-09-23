@@ -1,0 +1,29 @@
+@use '/src/themes/variables' as *;
+
+.Sider {
+  border-bottom: 1px solid $border-default-color;
+  width: 160px;
+
+  .ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $border-default-color;
+    .ant-menu {
+      border: none;
+    }
+  }
+}
+
+.Sider_title {
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  font-family: 'Lexend';
+  color: #8cb09b;
+  font-weight: 600;
+  top: 25px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 18px;
+}

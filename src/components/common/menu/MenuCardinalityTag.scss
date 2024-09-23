@@ -1,0 +1,15 @@
+@use 'src/themes/variables' as *;
+
+.FlexiSelect {
+  background-color: $menu-cardinality-group-pick-bg;
+  color: $white;
+}
+
+.Mandatory {
+  background-color: $menu-cardinality-mandatory-bg;
+  color: $white;
+}
+.SingleSelect {
+  background-color: $menu-cardinality-optional-bg;
+  color: $white;
+}

@@ -1,0 +1,5 @@
+@use 'src/themes/variables' as *;
+
+.CardMenuItem {
+  background-color: $menu-item-bg-color;
+}

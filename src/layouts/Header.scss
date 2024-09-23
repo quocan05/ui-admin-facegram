@@ -1,0 +1,15 @@
+@use "/src/themes/variables" as *;
+
+.Header {
+  display: flex;
+  border-bottom: solid 1px $border-default-color;
+  &__container {
+    margin-left: auto;
+    height: 100%;
+  }
+  &__icon {
+    height: 24px;
+    width: 24px;
+    color: $dark-primary-color;
+  }
+}

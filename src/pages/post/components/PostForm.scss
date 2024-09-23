@@ -1,0 +1,28 @@
+.post-card {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post-author {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.post-timestamp {
+  color: #888;
+  font-size: 12px;
+}
+
+.post-content {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.post-actions {
+  margin-top: 16px;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 8px;
+}

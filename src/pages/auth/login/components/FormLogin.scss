@@ -1,0 +1,39 @@
+.login-form {
+  padding-top: 20px;
+}
+
+:where(.css-dev-only-do-not-override-11xg00t).ant-form-item .ant-form-item-label {
+  text-align: start;
+}
+.ant-form-item {
+  margin-bottom: 8px;
+  //margin-left: 20px;
+  //margin-right: 10px;
+}
+
+span {
+  font-size: 16px !important;
+  text-align: left;
+}
+
+p {
+  width: 100% !important;
+  font-size: 16px !important;
+  text-align: left;
+}
+
+.ant-col,
+.ant-col-8,
+.css-dev-only-do-not-override-1un6sob {
+  text-align: left !important;
+}
+.ant-card-body {
+  padding: 10px !important;
+}
+
+@media screen and (max-width: 768px) {
+  /* Điều chỉnh các style tại đây cho kích thước màn hình nhỏ hơn hoặc bằng 768px */
+  .form-item {
+    width: 100%; /* Thiết lập chiều rộng cho mọi thành phần form */
+  }
+}

@@ -1,0 +1,10 @@
+@use 'src/themes/variables' as *;
+
+.DeletedTag {
+  margin-bottom: 12px;
+}
+.ant-badge-count.ant-badge-multiple-words {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: $deleted-color;
+}

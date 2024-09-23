@@ -1,0 +1,11 @@
+@use 'src/themes/variables' as *;
+
+.User {
+  padding: 20px 40px 40px;
+  .ant-typography.UserID {
+    color: $disabled-color;
+  }
+  .UserDetail {
+    margin-top: 30px;
+  }
+}

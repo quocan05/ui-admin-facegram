@@ -1,0 +1,27 @@
+@use 'src/themes/variables' as *;
+
+.UserList {
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+
+  .UserTable {
+    margin-top: 30px;
+    .icon-active-user {
+      color: $dark-primary-color;
+    }
+    .icon-inactive-user {
+      color: $inactive-color;
+    }
+  }
+  span {
+    cursor: pointer;
+  }
+
+  &__search {
+    &-close {
+      cursor: pointer;
+    }
+  }
+}

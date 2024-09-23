@@ -1,0 +1,33 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-form-login {
+  /* Container styling */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0); /* Fully transparent to see the background image */
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px); /* Blur the background image */
+
+  /* Dragon Ball green aura-like border */
+  border: 3px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(white, white), radial-gradient(circle at 50% 50%, #39ff14, #006400);
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.5), /* Outer green glow */ inset 0 0 10px rgba(57, 255, 20, 0.3); /* Inner glow */
+}
+
+body {
+  background-image: url('../../../assets/images/kamehouse.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
+}

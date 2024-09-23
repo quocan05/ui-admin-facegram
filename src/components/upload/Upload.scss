@@ -1,0 +1,77 @@
+.fd-upload {
+  &-container {
+    width: 320px;
+    height: 160px;
+    border: 1px solid #d9d9d9;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    gap: 8px;
+    padding: 8px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: lightgray;
+    position: relative;
+
+    .btn-delete {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+
+    &:hover .ant-btn {
+      opacity: 1;
+    }
+
+    .ant-upload-disabled {
+      .ant-btn {
+        cursor: no-drop;
+        pointer-events: none;
+      }
+    }
+
+    .ant-btn {
+      display: flex;
+      align-items: center;
+      opacity: 0;
+      transition: 0.5s ease;
+    }
+  }
+  &:not(.v2) {
+    .btn-delete {
+      color: white !important;
+      border-color: rgb(148, 37, 37) !important;
+      background: rgb(148, 37, 37) !important;
+    }
+  }
+
+  &.v2 {
+    .fd-upload-container {
+      border-radius: 12px;
+      width: 100%;
+      height: 209px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: end;
+    }
+
+    &:hover .ant-btn {
+      opacity: 1;
+    }
+
+    .ant-upload-wrapper {
+      text-align: center;
+
+      .ant-upload {
+        width: 100%;
+
+        .btn-choose-img {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@use 'src/themes/variables' as *;
+
+.MenuComponent {
+  .active-item {
+    font-weight: bold;
+  }
+  .inactive-item {
+    font-weight: normal;
+  }
+}
