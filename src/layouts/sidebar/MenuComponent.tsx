@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router';
 import '../../themes/_colors.scss';
 import './MenuComponent.scss';
 import { RoutePaths } from '../../routes/route-constant';
-import { IconClipboard, IconUser } from '../../assets/icons';
+import { IconClipboard, IconDashboard, IconUser } from '../../assets/icons';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -32,6 +32,10 @@ const MenuComponent = () => {
   };
 
   const menuList: MenuItem[] = [
+    {
+      key: RoutePaths.DASHBOARD,
+      label: getTitle(RoutePaths.DASHBOARD, 'Dashboard', IconDashboard),
+    },
     {
       key: RoutePaths.USER_LIST,
       label: getTitle(RoutePaths.USER_LIST, 'Users', IconUser),

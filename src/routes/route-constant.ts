@@ -5,7 +5,8 @@ export const RoutePaths = {
 
   // auth
   HOME: '/',
-
+  //dashboard
+  DASHBOARD: '/dashboard',
   // users
   USER_LIST: '/users',
   USER_EDIT: (userId = ':userId') => `/users/edit/${userId}`,

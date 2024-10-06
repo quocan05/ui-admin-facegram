@@ -45,7 +45,7 @@ const Header = () => {
               ],
             }}
           >
-            <Avatar style={{ width: 36, height: 36 }}></Avatar>
+            <Avatar style={{ width: 36, height: 36 }}>Admin</Avatar>
           </Dropdown>
         ) : (
           <span style={{ cursor: 'pointer' }}>Login</span>

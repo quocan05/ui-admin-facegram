@@ -2,14 +2,15 @@ import { Suspense, useMemo } from 'react';
 import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
 import { LoginPage } from 'src/pages/auth/login/Login';
-import UserDetail from 'src/pages/auth/user/UserDetail';
+import UserDetail from 'src/pages/user/UserDetail';
 import PostList from 'src/pages/post/PostList';
 import AuthLayout from '../layouts/AuthLayout';
 import NonAuthLayout from '../layouts/NonAuthLayout';
 import AuthPage from '../pages/auth';
-import UserList from '../pages/auth/user/UserList';
+import UserList from '../pages/user/UserList';
 import { RoutePaths } from './route-constant';
 import PostDetail from 'src/pages/post/PostDetail';
+import Dashboard from 'src/pages/dashboard/Dashboard';
 
 const Routes = () => {
   const routes = useMemo(
@@ -31,6 +32,7 @@ const Routes = () => {
               <Route path={RoutePaths.USER_DETAIL()} element={<UserDetail />} />
               <Route path={RoutePaths.POST_LIST} element={<PostList />} />
               <Route path={RoutePaths.POST_DETAIL()} element={<PostDetail />} />
+              <Route path={RoutePaths.DASHBOARD} element={<Dashboard />} />
             </Route>
           </>,
         ),
